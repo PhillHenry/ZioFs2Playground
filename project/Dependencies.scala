@@ -33,6 +33,9 @@ object Dependencies {
 
     val dockerJava = "3.2.13"
     val ip4s       = "3.1.3"
+
+    val zio      = "2.0.15"
+    val zioKafka = "2.3.2"
   }
 
   object Libraries {
@@ -103,6 +106,9 @@ object Dependencies {
       "com.github.docker-java" % "docker-java-transport-httpclient5" % V.dockerJava
 
     val ip4s = "com.comcast" %% "ip4s-core" % V.ip4s
+
+    val zio      = "dev.zio" %% "zio"       % V.zio
+    val zioKafka = "dev.zio" %% "zio-kafka" % V.zioKafka
 
   }
 
