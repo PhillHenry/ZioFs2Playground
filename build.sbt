@@ -1,6 +1,6 @@
-import Dependencies._
+import Dependencies.*
 
-ThisBuild / scalaVersion     := "3.1.1"
+ThisBuild / scalaVersion     := "3.3.0"
 ThisBuild / version          := "0.1.0"
 ThisBuild / organization     := "odinconsultants.co.uk"
 ThisBuild / organizationName := "OdinConsultants"
@@ -63,7 +63,7 @@ def dockerSettings(name: String) = List(
 
 lazy val root = (project in file("."))
   .settings(
-    name := "modernstack"
+    name := "ZioCatsPlayground"
   )
   .aggregate(lib, core, it)
 
