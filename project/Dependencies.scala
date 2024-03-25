@@ -34,7 +34,7 @@ object Dependencies {
     val dockerJava = "3.2.13"
     val ip4s       = "3.1.3"
 
-    val zio      = "2.0.15"
+    val zio      = "2.0.21"
     val zioKafka = "2.3.2"
   }
 
