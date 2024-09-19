@@ -4,24 +4,25 @@ import org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport._
 object Dependencies {
 
   object V {
-    val cats          = "2.10.0"
-    val catsEffect    = "3.5.4"
-    val circe         = "0.14.2"
-    val ciris         = "2.3.2"
-    val doobie        = "1.0.0-RC2"
-    val flyway        = "8.5.11"
-    val fs2Core       = "3.2.7"
-    val fs2Kafka      = "2.4.0"
-    val http4s        = "1.0.0-M32"
-    val http4sWs      = "1.0.0-M1"
-    val kittens       = "3.0.0-M1"
-    val monocle       = "3.1.0"
-    val natchez       = "0.1.6"
-    val natchezHttp4s = "0.3.2"
-    val neutron       = "0.6.0"
-    val odin          = "0.13.0"
-    val redis4cats    = "1.2.0"
-    val refined       = "0.9.29"
+    val cats              = "2.10.0"
+    val catsEffect        = "3.5.4"
+    val catsEffectTesting = "1.5.0"
+    val circe             = "0.14.2"
+    val ciris             = "2.3.2"
+    val doobie            = "1.0.0-RC2"
+    val flyway            = "8.5.11"
+    val fs2Core           = "3.2.7"
+    val fs2Kafka          = "2.4.0"
+    val http4s            = "1.0.0-M32"
+    val http4sWs          = "1.0.0-M1"
+    val kittens           = "3.0.0-M1"
+    val monocle           = "3.1.0"
+    val natchez           = "0.1.6"
+    val natchezHttp4s     = "0.3.2"
+    val neutron           = "0.6.0"
+    val odin              = "0.13.0"
+    val redis4cats        = "1.2.0"
+    val refined           = "0.9.29"
 
     val scalajsTime = "2.4.0-M1"
     val tyrian      = "0.3.2"
@@ -44,7 +45,9 @@ object Dependencies {
 
     def http4s(artifact: String): ModuleID = "org.http4s" %% ("http4s-" + artifact) % V.http4s
 
-    val cats       = "org.typelevel" %% "cats-core"           % V.cats
+    val cats              = "org.typelevel" %% "cats-core" % V.cats
+    val catsEffectTesting =
+      "org.typelevel" %% "cats-effect-testing-scalatest" % "1.5.0"
     val catsEffect = "org.typelevel" %% "cats-effect"         % V.catsEffect
     val fs2Core    = "co.fs2"        %% "fs2-core"            % V.fs2Core
     val kittens    = "org.typelevel" %% "kittens"             % V.kittens
